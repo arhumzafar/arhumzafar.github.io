@@ -2,14 +2,15 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+Hi, my name is Arhum Zafar and I am a recent UW-Madison graduate. I currently work in field of Machine Learning, in the Milwaukee Area. My career interests surround Machine Learning, Statistics, and Data Science, and their applications to all sorts of problems. I am also interested in pursuing graduate-level opportunities in the Statistics or ML/DS field. 
+<br>
+<br>
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+On this page, along with my [Github](https://github.com/arhumzafar), you will find more on what I'm currently learning/working on. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[Email](mailto:work.arhum@gmail.com)
