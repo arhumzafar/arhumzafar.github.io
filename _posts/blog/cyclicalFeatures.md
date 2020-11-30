@@ -41,7 +41,7 @@ df.head(7)
 The resulting dataframe would look something like this:<br>
 <br>
 
-![df](df.png) <br>
+![png](../../images/df.png) <br>
 <bR>
 Now, let's plot our data to visualize it better.
 ```python
@@ -51,7 +51,7 @@ plt.xlabel("Time of day (seconds past midnight)")
 plt.ylabel("Time value")
 ```
 
-![plot](plot.png)
+![png](../../images/plot.png)
 
 
 
@@ -78,7 +78,7 @@ df.head()
 ```
 Let's print out the first couple rows of our new dataframe.
 
-![df2](renamedf.png)
+![png](../../images/renamedf.png)
 
 ```python
 fig = plt.figure
@@ -87,7 +87,7 @@ plt.xlabel("Time of day (seconds past midnight)")
 plt.ylabel("Time value")
 ```
 
-![plot2](plot2.png)
+![png](../../images/plot2.png)
 
 By looking at the above plot, we can now notice that 5 minutes before midnight (11:55pm) and 5 minutes after midnight (00:05am) are only 10 minutes apart. This helps us solve our first problem, but we're not done just yet. By using the sine transformation, you get a weird occurrence. If you were draw a horizontal line at any point in the graph, you would notice that it touches two points. From this, it appears that midnight == noon, 2:15am == 11:45am, and so on -- which is obviously incorrect. In order to fix this, we use a cosine transformation as well.
 
@@ -95,7 +95,7 @@ By looking at the above plot, we can now notice that 5 minutes before midnight (
 fig = plt.figure
 plt.plot(df.cos_time)
 ```
-![plot3](plot3.png)
+![png](../../images/plot3.png)
 
 When this feature is now added to the plot, the symmetry that we had seen before has been broken. If we combine both features, all times can be identified seperately!
 <br>
@@ -109,7 +109,7 @@ df.sample(50).plot.scatter('sin_time','cos_time').set_aspect('equal');
 ```
 <br>
 
-![plot4](plot4.png)
+![png](../../images/plot4.png)
 
 <br>
 <br>
